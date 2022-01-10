@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ldUDrKIv+np6CRc9l+JjH3f1oBx1ACaxoaT97+48cQVLeWnHmb/RdxiYqDJAoAq62hlkXXBy6SxA2mVoUiGJng==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\topvi\\project\\PService\\PS.Domain\\PS.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\topvi\\.nuget\\packages\\mediatr\\10.0.0\\mediatr.10.0.0.nupkg.sha512",
+    "C:\\Users\\topvi\\.nuget\\packages\\mediatr.contracts\\1.0.0\\mediatr.contracts.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
