@@ -14,8 +14,7 @@ namespace PS.API.Externsion{
             services.AddDbContext<ApplicationDbContext>(options =>
 
                 options.UseMySql(
-                    connectionString,ServerVersion.AutoDetect(connectionString),
-                    provider=>provider.MigrationsAssembly("AuthMigrations")
+                    connectionString,ServerVersion.AutoDetect(connectionString)
                 )
             
             );
@@ -23,5 +22,7 @@ namespace PS.API.Externsion{
             return services;
         }
     }
+
+    
 
 }

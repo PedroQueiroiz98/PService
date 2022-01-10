@@ -1,4 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using PS.API.Extension;
 using PS.API.Externsion;
+using PS.API.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,8 +12,13 @@ builder.Services.AddSwaggerGen();
 builder.Services.ConfigureDbContextCustom(builder.Configuration);
 
 
+
+
+
 var app = builder.Build();
 
+
+app.MigrationDbContext<ApplicationDbContext>();
 
 
 // Configure the HTTP request pipeline.
