@@ -93,6 +93,19 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "PS.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MediatR": "10.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PS.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PS.Domain.dll": {}
+        }
       }
     }
   },
@@ -251,10 +264,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "PS.Domain/1.0.0": {
+      "type": "project",
+      "path": "../PS.Domain/PS.Domain.csproj",
+      "msbuildProject": "../PS.Domain/PS.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "PS.Domain >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3",
       "mediatR >= 10.0.1"
     ]
@@ -283,7 +302,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\topvi\\project\\PService\\PS.Domain\\PS.Domain.csproj": {
+              "projectPath": "C:\\Users\\topvi\\project\\PService\\PS.Domain\\PS.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,17 +1,86 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\topvi\\project\\PService\\Ps.UnitTest\\Ps.UnitTest.csproj": {}
+    "C:\\Users\\topvi\\project\\PService\\Ps.UnitTest\\PS.UnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\topvi\\project\\PService\\Ps.UnitTest\\Ps.UnitTest.csproj": {
+    "C:\\Users\\topvi\\project\\PService\\PS.API\\PS.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\topvi\\project\\PService\\Ps.UnitTest\\Ps.UnitTest.csproj",
-        "projectName": "Ps.UnitTest",
-        "projectPath": "C:\\Users\\topvi\\project\\PService\\Ps.UnitTest\\Ps.UnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\topvi\\project\\PService\\PS.API\\PS.API.csproj",
+        "projectName": "PS.API",
+        "projectPath": "C:\\Users\\topvi\\project\\PService\\PS.API\\PS.API.csproj",
         "packagesPath": "C:\\Users\\topvi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\topvi\\project\\PService\\Ps.UnitTest\\obj\\",
+        "outputPath": "C:\\Users\\topvi\\project\\PService\\PS.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\topvi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\topvi\\project\\PService\\PS.Domain\\PS.Domain.csproj": {
+                "projectPath": "C:\\Users\\topvi\\project\\PService\\PS.Domain\\PS.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "mediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\topvi\\project\\PService\\PS.Domain\\PS.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\topvi\\project\\PService\\PS.Domain\\PS.Domain.csproj",
+        "projectName": "PS.Domain",
+        "projectPath": "C:\\Users\\topvi\\project\\PService\\PS.Domain\\PS.Domain.csproj",
+        "packagesPath": "C:\\Users\\topvi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\topvi\\project\\PService\\PS.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\topvi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,9 +107,86 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\topvi\\project\\PService\\Ps.UnitTest\\PS.UnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\topvi\\project\\PService\\Ps.UnitTest\\PS.UnitTest.csproj",
+        "projectName": "PS.UnitTest",
+        "projectPath": "C:\\Users\\topvi\\project\\PService\\Ps.UnitTest\\PS.UnitTest.csproj",
+        "packagesPath": "C:\\Users\\topvi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\topvi\\project\\PService\\Ps.UnitTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\topvi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\topvi\\project\\PService\\PS.API\\PS.API.csproj": {
+                "projectPath": "C:\\Users\\topvi\\project\\PService\\PS.API\\PS.API.csproj"
+              },
+              "C:\\Users\\topvi\\project\\PService\\PS.Domain\\PS.Domain.csproj": {
+                "projectPath": "C:\\Users\\topvi\\project\\PService\\PS.Domain\\PS.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.11.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
