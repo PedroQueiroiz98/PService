@@ -68,9 +68,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PsService.Domain.csproj",
-      "projectName": "PsService.Domain",
-      "projectPath": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PsService.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PService.Domain.csproj",
+      "projectName": "PService.Domain",
+      "projectPath": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PService.Domain.csproj",
       "packagesPath": "C:\\Users\\topvi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\obj\\",
       "projectStyle": "PackageReference",

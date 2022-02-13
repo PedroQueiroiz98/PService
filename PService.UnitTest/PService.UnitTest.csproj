@@ -23,7 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PService.API\PService.API.csproj" />
-    <ProjectReference Include="..\PsService.Domain\PsService.Domain.csproj" />
+    <ProjectReference Include="..\PsService.Domain\PService.Domain.csproj" />
   </ItemGroup>
 
 </Project>

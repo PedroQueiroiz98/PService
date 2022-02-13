@@ -1,3 +1,9 @@
+
+
+using System.Reflection;
+using Microsoft.EntityFrameworkCore;
+using PService.Infrastructure;
+
 namespace PService.API;
 
 public class Startup 
@@ -25,7 +31,18 @@ public class Startup
     }
 
     public void ConfigureServices(IServiceCollection services)
-    {
+    {        
+        
+        var connetionString = Environment.GetEnvironmentVariable("OrderContext",EnvironmentVariableTarget.Machine);
+        services.AddDbContext<OrderContext>(x=>{
+            x.UseMySql(connetionString, ServerVersion.AutoDetect(connetionString),
+            sqlOptions=>{
+                 sqlOptions.MigrationsAssembly(typeof(Startup).GetTypeInfo().Assembly.GetName().Name);
+                 sqlOptions.EnableRetryOnFailure(maxRetryCount: 15, maxRetryDelay: TimeSpan.FromSeconds(30), errorNumbersToAdd: null);
+            });
+        });
+                                                            
+                                                        
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();

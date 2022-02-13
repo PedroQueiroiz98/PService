@@ -4,6 +4,6 @@ namespace PsService.Domain;
 
 public interface IOrderServiceRepository : IRepository<OrderService>{
 
-    Task Save(OrderService order);
+    Task Add(OrderService order);
     Task<OrderService> GetOrderAsync(int id);
 }

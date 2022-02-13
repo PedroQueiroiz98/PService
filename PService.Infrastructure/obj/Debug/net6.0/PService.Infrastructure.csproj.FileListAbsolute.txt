@@ -1,0 +1,17 @@
+C:\Users\topvi\project\PService\PService.Infrastructure\bin\Debug\net6.0\PService.Infrastructure.deps.json
+C:\Users\topvi\project\PService\PService.Infrastructure\bin\Debug\net6.0\PService.Infrastructure.dll
+C:\Users\topvi\project\PService\PService.Infrastructure\bin\Debug\net6.0\ref\PService.Infrastructure.dll
+C:\Users\topvi\project\PService\PService.Infrastructure\bin\Debug\net6.0\PService.Infrastructure.pdb
+C:\Users\topvi\project\PService\PService.Infrastructure\bin\Debug\net6.0\PService.Domain.dll
+C:\Users\topvi\project\PService\PService.Infrastructure\bin\Debug\net6.0\PService.Domain.pdb
+C:\Users\topvi\project\PService\PService.Infrastructure\obj\Debug\net6.0\PService.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\topvi\project\PService\PService.Infrastructure\obj\Debug\net6.0\PService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\topvi\project\PService\PService.Infrastructure\obj\Debug\net6.0\PService.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\topvi\project\PService\PService.Infrastructure\obj\Debug\net6.0\PService.Infrastructure.AssemblyInfo.cs
+C:\Users\topvi\project\PService\PService.Infrastructure\obj\Debug\net6.0\PService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\topvi\project\PService\PService.Infrastructure\obj\Debug\net6.0\PService.Infrastructure.csproj.CopyComplete
+C:\Users\topvi\project\PService\PService.Infrastructure\obj\Debug\net6.0\PService.Infrastructure.dll
+C:\Users\topvi\project\PService\PService.Infrastructure\obj\Debug\net6.0\ref\PService.Infrastructure.dll
+C:\Users\topvi\project\PService\PService.Infrastructure\obj\Debug\net6.0\PService.Infrastructure.pdb
+C:\Users\topvi\project\PService\PService.Infrastructure\bin\Debug\net6.0\PService.Infrastructure.runtimeconfig.json
+C:\Users\topvi\project\PService\PService.Infrastructure\obj\Debug\net6.0\PService.Infrastructure.genruntimeconfig.cache
