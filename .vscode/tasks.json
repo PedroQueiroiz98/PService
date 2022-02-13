@@ -79,7 +79,8 @@
             "dockerRun": {
                 "ports": [
                     { "hostPort": 5000, "containerPort": 5000 }
-                ]
+                ],
+                "network": "pservice_mysql-compose-network"
             },
             "netCore": {
                 "appProject": "${workspaceFolder}/PService.API/PService.API.csproj",

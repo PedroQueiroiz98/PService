@@ -29,10 +29,10 @@ public class OrderServiceController : ControllerBase
 
          _logger.LogInformation("----- Creating Order - Order: {@Order}", order);
 
-        order = _repository.Add(order);
+        _repository.Add(order);
         await _repository.UnitOfWork.SaveEntitiesAsync();
 
-        return CreatedAtAction(nameof(GetOrderByIdAsync), new { id = order.Id }, null);
+        return CreatedAtAction(nameof(GetOrderByIdAsync), new { id = order.Id },OrderServiceResponse.FromOrderService(order));
     }
     [HttpGet("{id}")]
     [ProducesResponseType(typeof(OrderServiceResponse),(int)HttpStatusCode.OK)]

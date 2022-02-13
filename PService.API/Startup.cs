@@ -29,7 +29,9 @@ public class Startup
         app.UseRouting();
         app.UseEndpoints(x=>{
             x.MapControllers();
+            
         });
+        app.RunMigrations();
     }
 
     public void ConfigureServices(IServiceCollection services)
@@ -45,7 +47,9 @@ public class Startup
         });
                                                             
                                                         
-        services.AddControllers();
+        services.AddControllers(x=>{
+            x.SuppressAsyncSuffixInActionNames = false;
+        });
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
         services.AddRepository();
@@ -58,5 +62,21 @@ public static class ServiceInjectionExtension{
 
         services.AddScoped<IOrderServiceRepository,OrderServiceRepository>();
         return services;
+    }
+}
+public static class AppBuilderExtension{
+
+    public static IApplicationBuilder RunMigrations(this IApplicationBuilder app){
+
+         using (var serviceScope = app.ApplicationServices
+            .GetRequiredService<IServiceScopeFactory>()
+            .CreateScope())
+        {
+            using (var context = serviceScope.ServiceProvider.GetService<OrderContext>())
+            {
+                context.Database.Migrate();
+            }
+        }
+        return app;
     }
 }

@@ -3,10 +3,18 @@
 version: '3.4'
 
 services:
-  pserviceapi:
-    image: pserviceapi
-    build:
-      context: .
-      dockerfile: PService.API/Dockerfile
+  mysqlsrv:
+    image: mysql:latest
+    container_name: my-sql
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "PService"
     ports:
-      - 5000:5000
+      - "3306:3306"
+    volumes:
+      - /Desenvolvimento/Docker/Volumes/MySql:/var/lib/mysql
+    networks:
+      - mysql-compose-network
+networks: 
+  mysql-compose-network:
+    driver: bridge
