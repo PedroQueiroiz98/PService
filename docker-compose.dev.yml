@@ -13,6 +13,7 @@ services:
       - "3306:3306"
     volumes:
       - /Desenvolvimento/Docker/Volumes/MySql:/var/lib/mysql
+      - ./PService.Infrastructure/init:/docker-entrypoint-initdb.d
     networks:
       - mysql-compose-network
 networks: 
