@@ -11,10 +11,12 @@ namespace PService.API;
 public class Startup 
 {   
     private readonly IConfiguration Configuration;
+    private readonly string ConnectionString;
 
     public Startup(IConfiguration configuration){
 
         Configuration = configuration;
+        ConnectionString = Environment.GetEnvironmentVariable("ORDER_CONTEXT",EnvironmentVariableTarget.Process) ?? "";
     }
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
@@ -34,25 +36,27 @@ public class Startup
         app.RunMigrations();
     }
 
-    public void ConfigureServices(IServiceCollection services)
+    public virtual void ConfigureServices(IServiceCollection services)
     {        
         
-        var connetionString = Environment.GetEnvironmentVariable("ORDER_CONTEXT",EnvironmentVariableTarget.Process);
-        services.AddDbContext<OrderContext>(x=>{
-            x.UseMySql(connetionString, ServerVersion.AutoDetect(connetionString),
-            sqlOptions=>{
-                 sqlOptions.MigrationsAssembly(typeof(Startup).GetTypeInfo().Assembly.GetName().Name);
-                 sqlOptions.EnableRetryOnFailure(maxRetryCount: 15, maxRetryDelay: TimeSpan.FromSeconds(30), errorNumbersToAdd: null);
-            });
-        });
-                                                            
                                                         
+        ConfigurationDataBase(services);                              
         services.AddControllers(x=>{
             x.SuppressAsyncSuffixInActionNames = false;
         });
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
         services.AddRepository();
+    }
+    protected virtual void ConfigurationDataBase(IServiceCollection services){
+         var connetionString = Environment.GetEnvironmentVariable("ORDER_CONTEXT",EnvironmentVariableTarget.Process);
+         services.AddDbContext<OrderContext>(x=>{
+            x.UseMySql(connetionString, ServerVersion.AutoDetect(connetionString),
+            sqlOptions=>{
+                 sqlOptions.MigrationsAssembly(typeof(Startup).GetTypeInfo().Assembly.GetName().Name);
+                 sqlOptions.EnableRetryOnFailure(maxRetryCount: 15, maxRetryDelay: TimeSpan.FromSeconds(30), errorNumbersToAdd: null);
+            });
+        });
     }
 }
 

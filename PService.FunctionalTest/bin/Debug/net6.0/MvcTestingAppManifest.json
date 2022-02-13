@@ -1,0 +1,5 @@
+{
+  "PService.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "c:\\Users\\topvi\\project\\PService\\PService.API",
+  "PService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "c:\\Users\\topvi\\project\\PService\\PsService.Domain",
+  "PService.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "c:\\Users\\topvi\\project\\PService\\PService.Infrastructure"
+}
