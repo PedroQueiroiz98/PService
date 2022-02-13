@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bXLvb+xkz4YRzu/bO7UnlBHSE9PIJzpSd5IOgN+mhqMPucSHkGjOTRQB++xA73uH2ddB5BkNRNrkyD2nXzvH9A==",
+  "dgSpecHash": "h0/3E2btQbsK9/90rVw/4BVGQQr7Blz6aMGi4h8cP++EWtWc3jCxtFfRd2Npjho4Kc3wJSnuX9WdSu69qDk1xw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\topvi\\project\\PService\\PService.APi\\PService.API.csproj",
+  "projectFilePath": "C:\\Users\\topvi\\project\\PService\\PService.API\\PService.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\topvi\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\topvi\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",

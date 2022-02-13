@@ -3,6 +3,8 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using PService.Infrastructure;
+using PService.Infrastructure.Repository;
+using PsService.Domain;
 
 namespace PService.API;
 
@@ -33,7 +35,7 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {        
         
-        var connetionString = Environment.GetEnvironmentVariable("OrderContext",EnvironmentVariableTarget.Machine);
+        var connetionString = Environment.GetEnvironmentVariable("ORDER_CONTEXT",EnvironmentVariableTarget.Process);
         services.AddDbContext<OrderContext>(x=>{
             x.UseMySql(connetionString, ServerVersion.AutoDetect(connetionString),
             sqlOptions=>{
@@ -46,5 +48,15 @@ public class Startup
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
+        services.AddRepository();
+    }
+}
+
+public static class ServiceInjectionExtension{
+
+    public static IServiceCollection AddRepository(this IServiceCollection services){
+
+        services.AddScoped<IOrderServiceRepository,OrderServiceRepository>();
+        return services;
     }
 }

@@ -1,7 +1,4 @@
 {
-    // Use o IntelliSense para saber mais sobre os atributos possíveis.
-    // Focalizar para exibir as descrições dos atributos existentes.
-    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -9,17 +6,16 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/PS.API/bin/Debug/net6.0/PS.API.dll",
+            "program": "${workspaceFolder}/PService.API/bin/Debug/net6.0/PService.API.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/PS.API",
+            "cwd": "${workspaceFolder}/PService.API",
             "stopAtEntry": false,
-            "console": "externalTerminal",
             "serverReadyAction": {
                 "action": "openExternally",
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
@@ -29,6 +25,15 @@
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach"
+        },
+        {
+            "name": "Docker .NET Core Launch",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "netCore": {
+                "appProject": "${workspaceFolder}/PService.API/PService.API.csproj"
+            }
         }
     ]
 }

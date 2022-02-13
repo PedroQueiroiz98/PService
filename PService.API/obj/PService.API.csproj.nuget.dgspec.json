@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\topvi\\project\\PService\\PService.APi\\PService.API.csproj": {}
+    "C:\\Users\\topvi\\project\\PService\\PService.API\\PService.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\topvi\\project\\PService\\PService.APi\\PService.API.csproj": {
+    "C:\\Users\\topvi\\project\\PService\\PService.API\\PService.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\topvi\\project\\PService\\PService.APi\\PService.API.csproj",
+        "projectUniqueName": "C:\\Users\\topvi\\project\\PService\\PService.API\\PService.API.csproj",
         "projectName": "PService.API",
-        "projectPath": "C:\\Users\\topvi\\project\\PService\\PService.APi\\PService.API.csproj",
+        "projectPath": "C:\\Users\\topvi\\project\\PService\\PService.API\\PService.API.csproj",
         "packagesPath": "C:\\Users\\topvi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\topvi\\project\\PService\\PService.APi\\obj\\",
+        "outputPath": "C:\\Users\\topvi\\project\\PService\\PService.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\topvi\\AppData\\Roaming\\NuGet\\NuGet.Config"
