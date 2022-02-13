@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "s4eSqTLmkmi8ODJHqfjO62bo/RCdhFR8Kb9FlQq3Gi4=",
+  "Source": "PService.API",
+  "BasePath": "_content/PService.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

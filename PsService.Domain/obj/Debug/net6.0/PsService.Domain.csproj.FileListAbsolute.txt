@@ -1,0 +1,12 @@
+C:\Users\topvi\project\PService\PsService.Domain\bin\Debug\net6.0\PsService.Domain.deps.json
+C:\Users\topvi\project\PService\PsService.Domain\bin\Debug\net6.0\PsService.Domain.dll
+C:\Users\topvi\project\PService\PsService.Domain\bin\Debug\net6.0\ref\PsService.Domain.dll
+C:\Users\topvi\project\PService\PsService.Domain\bin\Debug\net6.0\PsService.Domain.pdb
+C:\Users\topvi\project\PService\PsService.Domain\obj\Debug\net6.0\PsService.Domain.csproj.AssemblyReference.cache
+C:\Users\topvi\project\PService\PsService.Domain\obj\Debug\net6.0\PsService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\topvi\project\PService\PsService.Domain\obj\Debug\net6.0\PsService.Domain.AssemblyInfoInputs.cache
+C:\Users\topvi\project\PService\PsService.Domain\obj\Debug\net6.0\PsService.Domain.AssemblyInfo.cs
+C:\Users\topvi\project\PService\PsService.Domain\obj\Debug\net6.0\PsService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\topvi\project\PService\PsService.Domain\obj\Debug\net6.0\PsService.Domain.dll
+C:\Users\topvi\project\PService\PsService.Domain\obj\Debug\net6.0\ref\PsService.Domain.dll
+C:\Users\topvi\project\PService\PsService.Domain\obj\Debug\net6.0\PsService.Domain.pdb
