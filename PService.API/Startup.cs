@@ -1,6 +1,7 @@
 
 
 using System.Reflection;
+using System.Text;
 using Microsoft.EntityFrameworkCore;
 using PService.Infrastructure;
 using PService.Infrastructure.Repository;
@@ -11,12 +12,10 @@ namespace PService.API;
 public class Startup 
 {   
     private readonly IConfiguration Configuration;
-    private readonly string ConnectionString;
 
     public Startup(IConfiguration configuration){
 
         Configuration = configuration;
-        ConnectionString = Environment.GetEnvironmentVariable("ORDER_CONTEXT",EnvironmentVariableTarget.Process) ?? "";
     }
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
@@ -49,7 +48,9 @@ public class Startup
         services.AddRepository();
     }
     protected virtual void ConfigurationDataBase(IServiceCollection services){
+
          var connetionString = Environment.GetEnvironmentVariable("ORDER_CONTEXT",EnvironmentVariableTarget.Process);
+         if(connetionString is null) connetionString = Environment.GetEnvironmentVariable("ORDER_CONTEXT",EnvironmentVariableTarget.Machine);
          services.AddDbContext<OrderContext>(x=>{
             x.UseMySql(connetionString, ServerVersion.AutoDetect(connetionString),
             sqlOptions=>{
@@ -58,6 +59,7 @@ public class Startup
             });
         });
     }
+   
 }
 
 public static class ServiceInjectionExtension{

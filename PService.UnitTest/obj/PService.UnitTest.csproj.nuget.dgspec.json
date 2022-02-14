@@ -26,8 +26,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PsService.Domain.csproj": {
-                "projectPath": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PsService.Domain.csproj"
+              "C:\\Users\\topvi\\project\\PService\\PService.Infrastructure\\PService.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\topvi\\project\\PService\\PService.Infrastructure\\PService.Infrastructure.csproj"
+              },
+              "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PService.Domain.csproj": {
+                "projectPath": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PService.Domain.csproj"
               }
             }
           }
@@ -42,6 +45,28 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -61,6 +86,78 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\topvi\\project\\PService\\PService.Infrastructure\\PService.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\topvi\\project\\PService\\PService.Infrastructure\\PService.Infrastructure.csproj",
+        "projectName": "PService.Infrastructure",
+        "projectPath": "C:\\Users\\topvi\\project\\PService\\PService.Infrastructure\\PService.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\topvi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\topvi\\project\\PService\\PService.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\topvi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PService.Domain.csproj": {
+                "projectPath": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -94,8 +191,8 @@
               "C:\\Users\\topvi\\project\\PService\\PService.API\\PService.API.csproj": {
                 "projectPath": "C:\\Users\\topvi\\project\\PService\\PService.API\\PService.API.csproj"
               },
-              "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PsService.Domain.csproj": {
-                "projectPath": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PsService.Domain.csproj"
+              "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PService.Domain.csproj": {
+                "projectPath": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PService.Domain.csproj"
               }
             }
           }
@@ -154,12 +251,12 @@
         }
       }
     },
-    "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PsService.Domain.csproj": {
+    "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PsService.Domain.csproj",
-        "projectName": "PsService.Domain",
-        "projectPath": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PsService.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PService.Domain.csproj",
+        "projectName": "PService.Domain",
+        "projectPath": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\PService.Domain.csproj",
         "packagesPath": "C:\\Users\\topvi\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\topvi\\project\\PService\\PsService.Domain\\obj\\",
         "projectStyle": "PackageReference",

@@ -61,3 +61,11 @@ C:\Users\topvi\project\PService\PService.APi\bin\Debug\net6.0\PService.Domain.pd
 C:\Users\topvi\project\PService\PService.APi\bin\Debug\net6.0\PService.Infrastructure.pdb
 C:\Users\topvi\project\PService\PService.APi\bin\Debug\net6.0\Humanizer.dll
 C:\Users\topvi\project\PService\PService.APi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\topvi\project\PService\PService.APi\bin\Debug\net6.0\CryptSharp.dll
+C:\Users\topvi\project\PService\PService.APi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\topvi\project\PService\PService.APi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\topvi\project\PService\PService.APi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\topvi\project\PService\PService.APi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\topvi\project\PService\PService.APi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\topvi\project\PService\PService.APi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\topvi\project\PService\PService.APi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
