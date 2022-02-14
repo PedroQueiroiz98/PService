@@ -6,7 +6,7 @@ namespace PService.API.Controllers;
 
 
 [ApiController]
-[Route("api/v1/[controller]")]
+[Route("api/v1/account")]
 public class AccountController : ControllerBase
 {
 

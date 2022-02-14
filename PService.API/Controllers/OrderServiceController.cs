@@ -6,7 +6,7 @@ using PsService.Domain;
 namespace PService.API.Controllers;
 
 [ApiController]
-[Route("api/v1/[controller]")]
+[Route("api/v1/order-service")]
 public class OrderServiceController : ControllerBase
 {
   
