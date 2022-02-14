@@ -2,6 +2,7 @@
 
 using System.Reflection;
 using System.Text;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PService.Infrastructure;
 using PService.Infrastructure.Identity;
@@ -71,6 +72,29 @@ public static class ServiceInjectionExtension{
     public static IServiceCollection AddRepository(this IServiceCollection services){
 
         services.AddScoped<IOrderServiceRepository,OrderServiceRepository>();
+        return services;
+    }
+     public static IServiceCollection AddCustomConfiguration(this IServiceCollection services, IConfiguration configuration)
+    {
+        services.AddOptions();
+        services.Configure<ApiBehaviorOptions>(options =>
+        {
+            options.InvalidModelStateResponseFactory = context =>
+            {
+                var problemDetails = new ValidationProblemDetails(context.ModelState)
+                {
+                    Instance = context.HttpContext.Request.Path,
+                    Status = StatusCodes.Status400BadRequest,
+                    Detail = "Please refer to the errors property for additional details."
+                };
+
+                return new BadRequestObjectResult(problemDetails)
+                {
+                    ContentTypes = { "application/problem+json", "application/problem+xml" }
+                };
+            };
+        });
+
         return services;
     }
 }
