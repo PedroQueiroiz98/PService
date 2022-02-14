@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using PService.Infrastructure;
+using PService.Infrastructure.Identity;
 using PService.Infrastructure.Repository;
 using PsService.Domain;
 
@@ -39,7 +40,8 @@ public class Startup
     {        
         
                                                         
-        ConfigurationDataBase(services);                              
+        ConfigurationDataBase(services);
+        ConfigurationAuthentication(services);                              
         services.AddControllers(x=>{
             x.SuppressAsyncSuffixInActionNames = false;
         });
@@ -59,7 +61,9 @@ public class Startup
             });
         });
     }
-   
+    private void ConfigurationAuthentication(IServiceCollection services){
+        services.AddScoped<ILoginService,LoginService>();
+    }
 }
 
 public static class ServiceInjectionExtension{

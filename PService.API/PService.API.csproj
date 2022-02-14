@@ -21,7 +21,6 @@
   <ItemGroup>
     <ProjectReference Include="..\PsService.Domain\PService.Domain.csproj" />
     <ProjectReference Include="..\PService.Infrastructure\PService.Infrastructure.csproj" />
-    <ProjectReference Include="..\PService.Auth\PService.Auth.csproj" />
   </ItemGroup>
 
 </Project>
