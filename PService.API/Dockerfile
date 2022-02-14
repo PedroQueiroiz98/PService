@@ -3,8 +3,6 @@ WORKDIR /app
 EXPOSE 5000
 
 ENV ASPNETCORE_URLS=http://+:5000
-ENV ORDER_CONTEXT=Server=my-sql;Port=3306;Database=PService;Uid=root;Pwd=root
-
 
 
 # Creates a non-root user with an explicit UID and adds permission to access the /app folder
